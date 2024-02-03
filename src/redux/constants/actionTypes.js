@@ -3,7 +3,7 @@
 // and in case we want to update the names we only have to update them here
 export const ActionTypes = {
     SET_PRODUCTS: "SET_PRODUCTS",
-    SELECTED_PRODUCT: "SELECTED_PRODUCTS",
+    SELECTED_PRODUCT: "SELECTED_PRODUCT",
     REMOVE_SELECTED_PRODUCTS: "REMOVE_SELECTED_PRODUCTS",
     
 }

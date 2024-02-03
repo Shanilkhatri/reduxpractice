@@ -1,19 +1,20 @@
 const initialState = {
     products:[
-        {
-            id: 1,
-            title: "Shaanil",
-            category: "software developer"
-        },
-    ]
+    ],
+    selectedProduct:{
+
+    }
 }
 
 export const productReducer = (state=initialState, {type, payload})=>{
     switch(type){
         case "SET_PRODUCTS":
-            return state
+            // we will spread the initial state plus the payload we receive
+            return {...state, products:payload}
         case "SELECTED_PRODUCT":
-            return state
+            return {...state, selectedProduct:payload}
+        case "REMOVE_SELECTED_PRODUCTS":
+            return {...state, selectedProduct:{}}
         default:
             return state
     }
