@@ -14,6 +14,7 @@ function ProductDetail() {
     const { image, title, price, category, description } = product;
     // fetchProdDetails function
     const fetchProdDetails= async ()=>{
+        // https://fakestoreapi.com/products/ : fake store api to get products data
         const response = await axios.get(`https://fakestoreapi.com/products/${productId}`).catch((err)=>{
             console.log("err: ",err)
         })
