@@ -9,7 +9,7 @@ function App() {
       <Router>
        <Header/>
        <Routes>
-       <Route path='/' exact Component={ProductListing} />
+       <Route path='/reduxpractice' exact Component={ProductListing} />
        <Route path='/product/:productId' exact Component={ProductDetail} />
        <Route>404 Not Found!</Route>
        </Routes>
